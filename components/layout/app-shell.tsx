@@ -1,6 +1,7 @@
 "use client";
 
 import { DemoBadge, DemoScenarios, GlobalSearch, HelpPanel } from "@/components/shared/actions";
+import { GuidedTour } from "@/components/layout/guided-tour";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -356,6 +357,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </footer>
       </div>
       <GlobalSearch />
+      <GuidedTour />
     </div>
   );
 }
+
