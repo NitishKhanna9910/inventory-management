@@ -11,6 +11,7 @@ import { sel, useStore } from "@/lib/store";
 import {
   AlertTriangle,
   BarChart3,
+  BookOpen,
   Bell,
   Building2,
   ChefHat,
@@ -44,7 +45,10 @@ import * as React from "react";
 const NAV: { section: string; items: { label: string; href: string; icon: React.ElementType }[] }[] = [
   {
     section: "Overview",
-    items: [{ label: "Dashboard", href: "/dashboard", icon: LayoutDashboard }],
+    items: [
+      { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+      { label: "Product Walkthrough", href: "/guide", icon: BookOpen },
+    ],
   },
   {
     section: "Inventory",

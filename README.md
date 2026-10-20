@@ -19,11 +19,11 @@ npm run typecheck  # tsc --noEmit
 npm run build      # production build (Vercel-ready)
 ```
 
-## Routes (24)
+## Routes (25)
 
 | Area | Routes |
 |------|--------|
-| Overview | `/` (dashboard) |
+| Overview | `/` (dashboard), `/guide` (product walkthrough) |
 | Inventory | `/inventory`, `/inventory/items`, `/categories` |
 | Operations | `/stock-movements`, `/stock-counts`, `/waste`, `/locations`, `/locations/[id]`, `/transfers` |
 | Procurement | `/suppliers`, `/suppliers/[id]`, `/purchase-orders`, `/purchase-orders/[id]`, `/receiving`, `/invoices` |
@@ -32,6 +32,8 @@ npm run build      # production build (Vercel-ready)
 | Admin | `/team`, `/settings` |
 
 Every sidebar link and primary action renders a real page — no blank screens or dead buttons.
+
+The `/guide` page is an in-app guided walkthrough of the full end-to-end cycle (items → PO → receiving → stock → waste → counts → transfers → recipes → reports), with live stats pulled from the current data and jump-to-page buttons for each phase.
 
 ## Business rules demonstrated
 
